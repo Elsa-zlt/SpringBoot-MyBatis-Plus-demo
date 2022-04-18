@@ -18,8 +18,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public R hello(){
-        R r = new R(productDao.selectList(null));
-        return r;
+        return new R(productDao.selectList(null));
     }
 
     @RequestMapping("/hhh")
